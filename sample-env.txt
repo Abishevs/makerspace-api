@@ -1,0 +1,3 @@
+GOOGLE_OAUTH_CLIENT_ID=your client Id here
+GOOGLE_OAUTH_CLIENT_SECRET=your client secret here
+GOOGLE_OAUTH_REDIRECT_URL=http://localhost:5000/api/sessions/oauth/google

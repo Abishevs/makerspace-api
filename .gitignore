@@ -38,6 +38,7 @@ __pycache__/
 /Godeps/
 /_workspace/
 *.e
+.env 
 
 # Exclude Go compiled binaries
 makerspace-api

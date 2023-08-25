@@ -7,15 +7,14 @@ import (
 )
 
 func Run() {
+
  	// Set up the API routes and handlers
 	router := api.SetupRouter()
-	const serverPort int = 8080
+	const serverPort int = 5000
 	fmt.Printf("Server listening on port %d...\n", serverPort)
 	http.ListenAndServe(fmt.Sprintf(":%d", serverPort), router)
 
 }
-
-
 
 // import (
 // 	"makerspace-api/api"
