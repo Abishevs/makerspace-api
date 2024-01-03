@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>htmx Example</title>
-    <script src="https://unpkg.com/htmx.org@1.9.5" integrity="sha384-xcuj3WpfgjlKF+FXhSQFQ0ZNr39ln+hwjN3npfM9VBnUskLolQAcN80McRIVOPuO" crossorigin="anonymous"></script>
-</head>
-<body>
+{{ define "content" }}
     <h1>htmx Example</h1>
     <p>Click the button to fetch a random number from the server:</p>
     <button hx-get="/random" hx-target="#result" hx-target="#result2">Fetch Random Number</button>
@@ -14,6 +8,6 @@
     <button hx-get="/random" hx-trigger="click">Generate Random Number</button>
 
     <div> <p id="result2">Smth else other here </p> </div>
-</body>
-</html>
+{{ end }} 
 
+<!-- {{ template "base.html" . }} -->
